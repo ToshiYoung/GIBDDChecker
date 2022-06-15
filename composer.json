@@ -1,0 +1,34 @@
+{
+    "name": "toshiyoung/car-checker",
+    "description": "Check car on https://гибдд.рф",
+    "keywords": ["гибдд.рф", "car check"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikita Burakov",
+            "email": "i@toshiyoung.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TY\\CarChecker\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TY\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    }
+}
